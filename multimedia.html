@@ -1,0 +1,64 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<HTML>
+<HEAD>
+<meta http-equiv="content-type" content="text/html; utf-8">
+<html lang="es">
+	<head>
+     	<link rel="stylesheet" type="text/css" href="./estilo.css" media="screen" />
+     	<link type="image/x-icon" href="favicon.ico" rel="icon" />
+    	<script type="text/javascript" src="http://code.jquery.com/jquery-latest.js"></script>	
+		<script type="text/javascript"> 
+	   	$(document).ready(function(){  
+	       	$("ul.subnav").parent().append("<span></span>"); //Only shows drop down trigger when js is enabled (Adds empty span tag after ul.subnav*)  
+	       	$("ul.topnav li span").click(function() { //When trigger is clicked...  
+            //Following events are applied to the subnav itself (moving subnav up and down)  
+            $(this).parent().find("ul.subnav").slideDown('fast').show(); //Drop down the subnav on click  
+    
+            $(this).parent().hover(function() {  
+            }, function(){  
+                $(this).parent().find("ul.subnav").slideUp('slow'); //When the mouse hovers out of the subnav, move it back up  
+            });  
+      
+            //Following events are applied to the trigger (Hover events for the trigger)  
+            }).hover(function() {  
+                $(this).addClass("subhover"); //On hover over, add class "subhover"  
+            }, function(){  //On Hover Out  
+                $(this).removeClass("subhover"); //On hover out, remove class "subhover"  
+        		});  
+    		});  
+		</script>         
+	</head>
+	<body>
+		<div class="paginam"> 
+			<div class="barra_fotos"></div>
+			<div class="caja_vacia"></div>	
+			<div class="caja_vacia"></div>	
+			<div class="caja_vacia"></div>	<!--Dejamos mas hueco para evitar el solape del menu con los frames-->
+			<div class="txt_cent">
+				<div class="caja_900">
+				Hemos Recopilado una selecci&oacute;n de videos de nuestras salidas procesionales,
+										podemos ver en primer lugar la salida de la Virgen de la Trinidad a hombros de su Cuadrilla de Mujeres en 2014. GRACIAS a todas las personas o entidades que han realizado las filmaciones. 
+				</div>	
+        		<div class="caja_480">
+        			<iframe width="480" height="360" src="//www.youtube.com/embed/QRXoUuVLii4" frameborder="0" allowfullscreen></iframe>
+		  		</div>
+				<div class="caja_900">        		
+					<div class="texto"><br>En este otro video podemos ver buena parte del recorrido as&iacute; como<br>
+										la recogida	de la salida procesional del 2009</div>
+				</div>   
+        		<div class="caja_480">
+					<iframe width="480" height="360" src="http://www.youtube.com/embed/ubc5-n96LGk?rel=0" frameborder="0" allowfullscreen></iframe>					
+        		</div>			     	
+				<div class="caja_900">        		
+					<div class="texto"><br>2012. Abajo tenemos los actos celebrados en nuestro templo dada la imposibilidad de ejecutar nuestra salida procesional por el mal tiempo reinante.<br>
+										 </div>
+				</div>
+        		<div class="caja_480">
+					<iframe width="480" height="360" src="http://www.youtube.com/embed/IT4E-mTB7sY?rel=0" frameborder="0" allowfullscreen></iframe>     
+        		</div>
+        	</div>	
+			<script type="text/javascript" src="./menu.js"></script>          	
+			<div class="fondo_paginam"></div>	        	
+		</div>
+    </body>
+</html>

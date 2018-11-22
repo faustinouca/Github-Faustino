@@ -1,0 +1,73 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0//EN">
+<HTML>
+<HEAD>
+<meta http-equiv="content-type" content="text/html; utf-8">
+<TITLE>Enlaces de Interés</TITLE>
+<link rel="stylesheet" type="text/css" href="./estilo.css" media="screen" />
+<link type="image/x-icon" href="favicon.ico" rel="icon" />
+<script type="text/javascript" src="http://code.jquery.com/jquery-latest.js"></script>		
+<script type="text/javascript"> 
+	    $(document).ready(function(){  
+	       $("ul.subnav").parent().append("<span></span>"); //Only shows drop down trigger when js is enabled (Adds empty span tag after ul.subnav*)  
+	       $("ul.topnav li span").click(function() { //When trigger is clicked...  
+            //Following events are applied to the subnav itself (moving subnav up and down)  
+            $(this).parent().find("ul.subnav").slideDown('fast').show(); //Drop down the subnav on click  
+    
+            $(this).parent().hover(function() {  
+            }, function(){  
+                $(this).parent().find("ul.subnav").slideUp('slow'); //When the mouse hovers out of the subnav, move it back up  
+            });  
+      
+            //Following events are applied to the trigger (Hover events for the trigger)  
+            }).hover(function() {  
+                $(this).addClass("subhover"); //On hover over, add class "subhover"  
+            }, function(){  //On Hover Out  
+                $(this).removeClass("subhover"); //On hover out, remove class "subhover"  
+        });  
+    });  
+</script>
+</HEAD>
+<BODY>
+<div class="cuerpo_pagina">
+	<script type="text/javascript" src="./barras_laterales.js"></script>
+<!--	<div class="barra_derecha"></div>	
+	<div class="barra_izquierda"></div>-->
+	<div class="pagina"> 
+		<div class="barra_saluda"></div>		
+			<!-- This menu has been inspired by the 'sexy menu' of Soh Tanaka. We're very grateful to him  -->
+		<div class="caja_vacia"></div> <!-- Dejamos una caja_920 x 35 vacía para montar el efecto de situar por encima del texto siguiente la caja del menu -->
+		<script type="text/javascript" src="./menu.js"></script>				
+		<div class="txt_cent">
+			<div class="caja_1000">	
+				<div class="caja_900">
+					ENLACES A ORGANISMOS DE LA DIOCESIS<br>
+					<a href="http://www.obispadodecadizyceuta.org/">Obispado de C&aacute;diz y Ceuta</a><br>
+					<a href="http://www.secretariadohhyccdecadiz.blogspot.com/">Secretariado Diocesano para las Hermandades y Cofrad&iacute;as</a>
+				</div>
+				<br>
+				<br>
+				<div class="caja_txt500">
+					<div class="txt_cent">ENLACES A OTRAS HERMANDADES DE MEDINACELI<br><br>
+						<a href="http://www.archimadrid.es/jesusmedinaceli/"> Medinaceli Madrid</a><br>
+						<a href="http://www.archicofradiamedinaceli.com/"> Medinaceli San Fernando</a><br>
+						<a href="http://www.medinacelicadiz.com"> Medinaceli C&aacute;diz</a><br>
+						<a href="http://www.fundacionmedinaceli.org/"> Fundaci&oacute;n Casa Ducal Medinaceli</a>				
+					</div>		
+				</div>
+
+				<div class="rgtcaja_txt500">
+					<div class="texto">ENLACES A HERMANDADES DE PUERTO REAL<br><br>
+						<a href="https://es-es.facebook.com/HERMANDAD-DE-LA-SOLEDAD-PUERTO-REAL-C%C3%A1diz-271120112910127/"> Hdad. Ntra. Sra. de la Soledad</a><br>
+						<a href="http://hdaddolorespuertoreal.blogspot.com/">Blog Hdad. Mar&iacute;a Stma. de los Dolores</a><br>
+						<a href="http://www.nazarenopuertoreal.es"> Hdad. Jes&uacute;s Nazareno</a><br>
+						<a href="http://www.borriquitapuertoreal.com/La_Borriquita/Inicio.html"> Hdad. de la Borriquita</a><br>
+					</div>		
+				</div>
+			</div>
+
+		</div>
+		<div class="fondo_pagina"></div>
+	</div>
+</div>			
+</BODY>
+</HTML>

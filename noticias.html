@@ -1,0 +1,166 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<HTML>
+<HEAD>
+<meta http-equiv="content-type" content="text/html; utf-8">
+<html lang="es">
+<TITLE>Noticias de la Cofrad&iacute;a de Medinaceli</TITLE>
+	<link rel="stylesheet" type="text/css" href="./estilo.css" media="screen" />
+	<link rel="stylesheet" type="text/css" href="./haccordion.css" />
+	<link type="image/x-icon" href="favicon.ico" rel="icon" />
+	<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.3.2/jquery.min.js"></script>
+	<script type="text/javascript" src="haccordion.js">
+	/***********************************************
+	* Horizontal Accordion script- (c) Dynamic Drive DHTML code library (www.dynamicdrive.com)
+	* This notice MUST stay intact for legal use
+	* Visit Dynamic Drive at http://www.dynamicdrive.com/ for this script and 100s more
+	***********************************************/
+	</script>
+	<style type="text/css">
+	#hc1 li{
+		margin:0 3px 0 0; /*Spacing between each LI container*/
+	}
+	#hc1 li .hpanel{
+		padding: 5px; /*Padding inside each content*/
+		background: #FFF6CF;
+	}
+	
+	</style>
+	<script type="text/javascript">
+		haccordion.setup({
+			accordionid: 'hc1', //main accordion div id
+			paneldimensions: {peekw:'50px', fullw:'650px', h:'493px'},
+			selectedli: [0, true], //[selectedli_index, persiststate_bool]
+			collapsecurrent: false //<- No comma following very last setting!
+		})
+
+	</script>
+	<script type="text/javascript"> 
+	    $(document).ready(function(){  
+	       $("ul.subnav").parent().append("<span></span>"); //Only shows drop down trigger when js is enabled (Adds empty span tag after ul.subnav*)  
+	       $("ul.topnav li span").click(function() { //When trigger is clicked...  
+            //Following events are applied to the subnav itself (moving subnav up and down)  
+            $(this).parent().find("ul.subnav").slideDown('fast').show(); //Drop down the subnav on click  
+    
+            $(this).parent().hover(function() {  
+            }, function(){  
+                $(this).parent().find("ul.subnav").slideUp('slow'); //When the mouse hovers out of the subnav, move it back up  
+            });  
+      
+            //Following events are applied to the trigger (Hover events for the trigger)  
+            }).hover(function() {  
+                $(this).addClass("subhover"); //On hover over, add class "subhover"  
+            }, function(){  //On Hover Out  
+                $(this).removeClass("subhover"); //On hover out, remove class "subhover"  
+        });  
+    });  
+	</script>	
+	<title>P&aacute;gina de Inicio de la Web de la Cofrad&iacute;ía de Jesus de Medinaceli de Puerto Real</title>
+</HEAD>
+<BODY>
+	<div class="paginasmll"> 
+		<div class="barra_saluda"></div>		
+			<!-- This menu has been inspired by the 'sexy menu' of Soh Tanaka. We're very grateful to him  -->
+			<!-- <div class="disclaimer">Sexy Drop Down Menu Tutorial by <a href="http://www.SohTanaka.com">Soh Tanaka</a>.</div> -->
+		<div class="caja_vacia"></div> <!-- Dejamos una caja_920 x 35 vacía para montar el efecto de situar por encima del texto siguiente la caja del menu -->
+		<div class="caja_900">
+			<div class="txt_cent">NOTICIAS COFRADES<br>Las noticias que comienzan con * permiten acceder al contenido total de la noticia<br>
+						pulsando sobre la imagen
+			</div>
+		</div>
+
+		<div class="caja_1020">	
+			<div id="hc1" class="haccordion">
+				<ul>
+					<li>					
+					<div class="hpanel">
+						<a style="background: #FFF6CF;"href="./noticias/CartelTriduoSeptiembre.pdf"><img src="./noticias/CartelTriduoSeptiembre.png" style="float:left; padding-right:8px; width:350px; height:493px" /></a>
+						Triduo los d&iacute;as 12, 13 y 14 de Septiembre en honor a Ntra. Sra.
+						Pulsa para acceder a toda la informaci&oacute;n
+  					</div>
+					</li>				
+					<li>					
+					<div class="hpanel">
+						<a style="background: #FFF6CF;"href="./noticias/actosycultos.pdf"><img src="./noticias/actosycultos.PNG" style="float:left; padding-right:8px; width:350px; height:493px" />*</a>
+						Actos y Cultos previstos en Puerto Real 2013-2014. Documento remitido por la Consejo Local de Hermandades y Cofrad&iacute;as de Puerto Real.
+						Pulsa sobre la imagen para acceder a toda la informaci&oacute;n.
+					</div>
+					</li>		-->		
+					<li>					
+				 	<div class="hpanel">
+						<a style="background: #FFF6CF;"><img src="./noticias/junta.png" style="float:left; padding-right:8px; width:350px; height:493px" />*</a>
+						30 de Junio Juramento de la nueva Junta de Gobierno. Fotograf&iacute;as en la secci&oacute;n Multimedia. Gracias por vuestro apoyo.
+				 	</div>
+					</li>			
+
+<!--					<li>
+					<div class="hpanel">
+							<a style="background: #FFF6CF;" href="./noticias/ndpcabildo.pdf"><img src="./noticias/ndpcabildo.png" style="float:left; padding-right:8px; width:350px; height:493px" />*</a>
+						Cabildo de Elecciones, normativa de voto. VOTO POR CORREO. Apoya a tu Cofrad&iacute;a y vota. Pulsa para acceder a la informaci&oacute;n.
+					</div>
+					</li>	
+
+
+					<li>					
+					<div class="hpanel">
+						<a style="background: #FFF6CF;"href="./noticias/cabildo.pdf"><img src="./noticias/cabildo.png" style="float:left; padding-right:8px; width:350px; height:493px" />*</a>
+						Aviso de Cabildo de Elecciones el pr&oacute;ximo 14 de Junio. Plazo de presentaci&oacute;n de Candidaturas.
+						Pulsa sobre la imagen para acceder.
+					</div>
+					</li>
+					<li>					
+					<div class="hpanel">
+						<a style="background: #FFF6CF;"href="./noticias/cartatunicas.pdf"><img src="./noticias/cartatunicas.png" style="float:left; padding-right:8px; width:350px; height:493px" />*</a>
+						Formulario para la solicitud de t&uacute;nicas, tarjetas para la penitencia y aviso sobre donativos.
+						Pulsa sobre la imagen para acceder.
+					</div>
+					</li>
+					<li>
+					<div class="hpanel">
+						<a style="background: #FFF6CF;" href="./noticias/notadeprensalimentos.pdf"><img src="./noticias/notadeprensalimentos.png" style="float:left; padding-right:8px; width:350px; height:493px" />*</a>
+						Nuestra cofrad&iacute;a quiere expresar nuestro agradecimiento a los miembros e la CD Puerto Reale&ntilde;a, a los
+						del CD La Salle y al Excmo. Ayto de Puerto Real por su colaboraci&oacute;n en la campa&ntilde;a DEPORTE SOLIDARIO, gracias a la
+						cual se han renido 470 kg de alimentos que ser&aacute;n entregados a los m&aacute;s necesitados. Accede a toda la informaci&oacute;n pulsando sobre la imagen.
+					</div>
+					</li>
+					<li>
+					<div class="hpanel">
+						<a style="background: #FFF6CF;" href="./noticias/cultosnov2012.pdf"><img src="./noticias/cultosnov2012.png" style="float:left; padding-right:8px; width:350px; height:493px" />*</a>
+						Actos y Cultos previstos para Noviembre de 2012. Accede a toda la informaci&oacute;n.
+					</div>
+					</li>
+					<li>
+					<div class="hpanel">
+						<a style="background: #FFF6CF;" href="./noticias/notadeprensalignum.pdf"><img src="./noticias/notadeprensalignum.png" style="float:left; padding-right:8px; width:349px; height:493px" />*</a>
+						Calendario de Actos y Cultos en torno a la Presentaci&oacute;n y Puesta al Culto de la Reliquia del Sant&iacute;simo 
+						Ligum Crucis donado a la Hermandad. Pulsa sobre la imagen para acceder a la informaci&oacute;n.						
+					</div>
+					</li>-->		
+					<li>
+					<div class="hpanel">
+						<a style="background: #FFF6CF;" href="./noticias/BoletinInscripcionTrinidad.pdf"><img src="./noticias/bolsacaridad.png" style="float:left; padding-right:8px; width:341px; height:493px" />*</a>Desde nuestra Cofrad&iacute;a deseamos aportar un grano de arena mas contra la pobreza en nuestra tierra impulsando
+																		 una Bolsa de Caridad. El dinero de esta forma donado lo aportaremos a C&aacute;ritas.<br>Ayuda a los mas necesitados y descargate esta solicitud.					
+					</div>	
+					</li>	-->				
+					<li>
+					<div class="hpanel">
+						<a style="background: #FFF6CF;" href="./noticias/gafas.pdf"><img src="./noticias/gafas.png" style="float:left; padding-right:8px; width:349px; height:493px" />*</a>Campa&ntilde;a 'Una Mirada Nueva'. Patrocinada por nuestra Cofrad&itilde;a y por la &Oacute;ptica La Paz de Pto. Real, cada persona que acuda a dicha &oacute;ptica a comprar unas 
+						gafas no s&oacute;lo obtendr&aacute; un descuento importante en su compra sino que adem&aacute;s pondr&aacute; a disposici&oacute;n de los m&aacute;s necesitados unas gafas de manera gratuita. Pulsa sobre la imagen para obtener toda la informaci&oacute;n. 
+					</div>
+					</li>
+
+	
+<!--					<li>
+					<div class="hpanel">
+						<a style="background: #FFF6CF;" href="./noticias/clhc.pdf"><img src="./noticias/clhc.jpg" style="float:left; padding-right:8px; width:350px; height:493px" />*</a>Actos programados por el Consejo Local de Hermandades y Cofrad&iacute;as para la pr&oacute;xima Cuaresma de 2012.
+					</div>
+					</li>	-->					
+			</ul>
+			</div>		
+<!--			<p style="clear:left"><a href="javascript:haccordion.expandli('hc1', 0)">Curso Cofrade</a> | <a href="javascript:haccordion.expandli('hc1', 1)">Loter&iacute;a Navidad 2011</a> | <a href="javascript:haccordion.expandli('hc1', 2)">Hoja Liturgica</a> | <a href="javascript:haccordion.expandli('hc1', 3)">Bolsa Caridad</a>| <a href="javascript:haccordion.expandli('hc1', 4)">Medina</a>| <a href="javascript:haccordion.expandli('hc1', 5)">Sevilla</a></p> -->
+			<br>
+		</div>
+		<script type="text/javascript" src="./menu.js"></script>
+		<div class="fondo_paginasmll"></div>	
+	</div>	
+</BODY>
+</HTML>

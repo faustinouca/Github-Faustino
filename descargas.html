@@ -1,0 +1,58 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0//EN">
+<HTML>
+<HEAD>
+<TITLE>Zona de Descargas</TITLE>
+<link rel="stylesheet" type="text/css" href="./estilo.css" media="screen" />
+<link type="image/x-icon" href="favicon.ico" rel="icon" />
+<script type="text/javascript" src="http://code.jquery.com/jquery-latest.js"></script>	
+<script type="text/javascript"> 
+	    $(document).ready(function(){  
+	       $("ul.subnav").parent().append("<span></span>"); //Only shows drop down trigger when js is enabled (Adds empty span tag after ul.subnav*)  
+	       $("ul.topnav li span").click(function() { //When trigger is clicked...  
+            //Following events are applied to the subnav itself (moving subnav up and down)  
+            $(this).parent().find("ul.subnav").slideDown('fast').show(); //Drop down the subnav on click  
+    
+            $(this).parent().hover(function() {  
+            }, function(){  
+                $(this).parent().find("ul.subnav").slideUp('slow'); //When the mouse hovers out of the subnav, move it back up  
+            });  
+      
+            //Following events are applied to the trigger (Hover events for the trigger)  
+            }).hover(function() {  
+                $(this).addClass("subhover"); //On hover over, add class "subhover"  
+            }, function(){  //On Hover Out  
+                $(this).removeClass("subhover"); //On hover out, remove class "subhover"  
+        });  
+    });  
+</script>
+</HEAD>
+<BODY>
+	<div class="paginam"> 
+		<div class="barra_titulares"></div>	
+		<div class="caja_vacia"></div>
+
+		<div class="caja_900">
+			<div class="txt_cent">En este sitio puedes descargarte fotos, carteles, oraciones y documentos para 
+										el recuerdo, solo tienes que pulsar sobre la imagen de lo que desees guardar
+									   en tu ordenador, recuerda que algunos ficheros son mayores de lo habitual
+									   y que puedes tardar un poco en descargarlos.
+			</div>
+		</div>
+		<div class="caja_1000">
+			<center>
+			<a href="descargas.php?file=./descargas/cartel_1.pdf"><img src="./descargas/cartel_1.jpg"></a>
+			<a href="descargas.php?file=./descargas/Cartelss2012.jpg"><img src="./descargas/fotoss.jpg"></a>			
+			<a href="descargas.php?file=./descargas/oracionMariaSantisima.pdf"><img src="./descargas/oraciontrinidad.jpg"></a><br><br>
+			<a href="descargas.php?file=./descargas/OracionJesusMedinaceli.pdf"><img src="./descargas/oracionmedinaceli.jpg"></a>
+			<a href="descargas.php?file=./descargas/postula2007p.pdf"><img src="./descargas/fotopos2007.jpg"></a>
+			<a href="descargas.php?file=./descargas/postula2008p.pdf"><img src="./descargas/fotopos2008.jpg"></a><br><br>
+			<a href="descargas.php?file=./descargas/DSC_2304c.jpg"><img src="./descargas/foto2304.jpg"></a>
+			<a href="descargas.php?file=./descargas/DSC_0347.jpg"><img src="./descargas/foto347.jpg"></a>
+			<a href="descargas.php?file=./descargas/DSC_0297.jpg"><img src="./descargas/foto297.jpg"></a>
+			</center>												
+		</div>
+		<script type="text/javascript" src="./menu.js"></script>			
+		<div class="fondo_paginam"></div>			
+	</div>
+</BODY>
+</HTML>

@@ -1,0 +1,112 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html lang="en">
+	<head>
+   	<meta charset="utf-8">
+      <title>Galleria Classic Theme</title>
+     	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+    	<script src="./aino-galleria-43d4e9d/src/galleria.js"></script>
+     	<style>
+       	.content{color:#eee;font:14px/1.4 "helvetica neue", arial,sans-serif;width:620px;margin:20px auto}
+         h1{line-height:1.1;letter-spacing:-1px;}
+         a {color:#fff;}
+         #galleria{height:400px;}
+     	</style>
+     	<link rel="stylesheet" type="text/css" href="./estilo.css" media="screen" />
+     	<link type="image/x-icon" href="favicon.ico" rel="icon" />
+		<script type="text/javascript"> 
+	   	$(document).ready(function(){  
+	       	$("ul.subnav").parent().append("<span></span>"); //Only shows drop down trigger when js is enabled (Adds empty span tag after ul.subnav*)  
+	       	$("ul.topnav li span").click(function() { //When trigger is clicked...  
+            //Following events are applied to the subnav itself (moving subnav up and down)  
+            $(this).parent().find("ul.subnav").slideDown('fast').show(); //Drop down the subnav on click  
+    
+            $(this).parent().hover(function() {  
+            }, function(){  
+                $(this).parent().find("ul.subnav").slideUp('slow'); //When the mouse hovers out of the subnav, move it back up  
+            });  
+      
+            //Following events are applied to the trigger (Hover events for the trigger)  
+            }).hover(function() {  
+                $(this).addClass("subhover"); //On hover over, add class "subhover"  
+            }, function(){  //On Hover Out  
+                $(this).removeClass("subhover"); //On hover out, remove class "subhover"  
+        		});  
+    		});  
+		</script>         
+	</head>
+	<body>
+		<div class="pagina"> 
+			<div class="barra_caridad"></div>
+			<div class="caja_vacia"></div>	
+    		<div class="content">
+        		<h1>Bolsa de Caridad, colaboradores y preparaci&oacute;n</h1>
+        		<div id="galleria">
+            	<img alt="Campaña Deporte Solidario - 1" src="./imagenes_web/bolsacaridad/img_300.jpg">        		
+            	<img alt="Campaña Deporte Solidario - 2" src="./imagenes_web/bolsacaridad/img_301.jpg">
+            	
+            	<img alt="Campaña Juan XXIII - 1" src="./imagenes_web/bolsacaridad/camp_jxxiii_2.jpg">        		
+            	<img alt="Campaña Juan XXIII - 2" src="./imagenes_web/bolsacaridad/camp_jxxiii_1.jpg">
+
+            	<img alt="Campaña UCA - 1" src="./imagenes_web/bolsacaridad/camp_uca_1.jpg">
+            	<img alt="Campaña UCA - 2" src="./imagenes_web/bolsacaridad/camp_uca_2.jpg">
+            	<img alt="Campaña Maria Poquet - 1" src="./imagenes_web/bolsacaridad/camp_poquet_1.jpg">
+            	<img alt="Recogida Alimentos Nov. 2012 - 1" src="./imagenes_web/bolsacaridad/camp_nov12_1.jpg"> 
+            	
+            	<img alt="Visita Sr. Obispo - 1" src="./imagenes_web/bolsacaridad/img_400.jpg">        		
+            	<img alt="Visita Sr. Obispo - 2" src="./imagenes_web/bolsacaridad/img_401.jpg">
+
+            	<img alt="Bolsa Caridad - 1" src="./imagenes_web/bolsacaridad/img_0558.jpg">
+            	<img alt="Bolsa Caridad - 2" src="./imagenes_web/bolsacaridad/img_0562.jpg">
+            	<img alt="Bolsa Caridad - 3" src="./imagenes_web/bolsacaridad/img_0563.jpg">
+            	<img alt="Bolsa Caridad - 4" src="./imagenes_web/bolsacaridad/img_0565.jpg">
+            	<img alt="Bolsa Caridad - 5" src="./imagenes_web/bolsacaridad/img_0566.jpg">
+            	<img alt="Bolsa Caridad - 6" src="./imagenes_web/bolsacaridad/img_0568.jpg">
+            	<img alt="Bolsa Caridad - 7" src="./imagenes_web/bolsacaridad/img_0569.jpg">
+            	<img alt="Bolsa Caridad - 8" src="./imagenes_web/bolsacaridad/img_0572.jpg">
+            	<img alt="Bolsa Caridad - 9" src="./imagenes_web/bolsacaridad/img_0573.jpg">
+            	<img alt="Bolsa Caridad - 10" src="./imagenes_web/bolsacaridad/pbdc_1.jpg">
+            	<img alt="Bolsa Caridad - 11" src="./imagenes_web/bolsacaridad/pbdc_2.jpg">
+            	<img alt="Bolsa Caridad - 12" src="./imagenes_web/bolsacaridad/pbdc_3.jpg">
+            	<img alt="Bolsa Caridad - 13" src="./imagenes_web/bolsacaridad/pbdc_4.jpg">
+            	<img alt="Bolsa Caridad - 14" src="./imagenes_web/bolsacaridad/pbdc_5.jpg">
+            	<img alt="Bolsa Caridad - 15" src="./imagenes_web/bolsacaridad/pbdc_7.jpg">     
+            	<img alt="Bolsa Caridad - 16" src="./imagenes_web/bolsacaridad/pbdc_6.jpg">
+            	<img alt="Bolsa Caridad - 17" src="./imagenes_web/bolsacaridad/img_0576.jpg">
+            	<img alt="Bolsa Caridad - 18" src="./imagenes_web/bolsacaridad/img_0578.jpg">
+            	<img alt="Bolsa Caridad - 19" src="./imagenes_web/bolsacaridad/img_0580.jpg">      
+            	      	            	            	            	
+<!--            	<img alt="Recogida 13 Julio - 1" src="./imagenes_web/bolsacaridad/img_0590.jpg">
+           		<img alt="Recogida 13 Julio - 2" src="./imagenes_web/bolsacaridad/img_0593.jpg">
+ 					<img alt="Recogida 13 Julio - 3" src="./imagenes_web/bolsacaridad/img_0598.jpg">
+           		<img alt="Recogida 13 Julio - 4" src="./imagenes_web/bolsacaridad/img_0600.jpg">
+           		<img alt="Recogida 13 Julio - 5" src="./imagenes_web/bolsacaridad/img_0601.jpg">
+           		<img alt="Recogida 13 Julio - 6" src="./imagenes_web/bolsacaridad/img_0603.jpg">
+           		<img alt="Recogida 13 Julio - 7" src="./imagenes_web/bolsacaridad/img_0700.jpg">
+           		<img alt="Recogida 13 Julio - 8" src="./imagenes_web/bolsacaridad/img_0701.jpg">
+           		<img alt="Recogida 13 Julio - 9" src="./imagenes_web/bolsacaridad/img_0702.jpg">
+           		<img alt="Recogida 13 Julio - 10" src="./imagenes_web/bolsacaridad/img_0703.jpg">   
+           		<img alt="Recogida 13 Julio - 11" src="./imagenes_web/bolsacaridad/img_0704.jpg">
+           		<img alt="Recogida 13 Julio - 11" src="./imagenes_web/bolsacaridad/img_0589.jpg">
+           		<img alt="Recogida 13 Julio - 11" src="./imagenes_web/bolsacaridad/img_0592.jpg"> -->
+           		
+        		</div>
+		    	<script>
+    			// Load the classic theme
+    			Galleria.loadTheme('./aino-galleria-43d4e9d/src/themes/classic/galleria.classic.js');
+    			// Initialize Galleria
+    			$('#galleria').galleria();
+    			</script> 
+     		</div>    			    
+  			<div class="caja_1000">
+				<center>
+				<a href="./documentos/informacion.pdf"><img src="./documentos/informacion.png" align="center"></a>
+				<a href="./documentos/campanas.pdf"><img src="./documentos/campanas.png" align="center"></a>
+				<a href="./documentos/alimentosfamilia.pdf"><img src="./documentos/alimentosfamilia.png" align="center"></a><br><br>
+				</center>
+			</div>  			   		
+
+			<script type="text/javascript" src="./menu.js"></script>     		       		    			
+		<div class="fondo_pagina"></div>	        	
+		</div>   
+    </body>
+</html>

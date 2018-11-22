@@ -1,0 +1,69 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<HTML lang="es">
+<HEAD>
+<meta http-equiv="content-type" content="text/html; utf-8">
+<TITLE>Nuestros Titulares</TITLE>
+<link rel="stylesheet" type="text/css" href="./estilo.css" media="screen" />
+<script type="text/javascript" src="http://code.jquery.com/jquery-latest.js"></script>	
+<script type="text/javascript"> 
+	    $(document).ready(function(){  
+	       $("ul.subnav").parent().append("<span></span>"); //Only shows drop down trigger when js is enabled (Adds empty span tag after ul.subnav*)  
+	       $("ul.topnav li span").click(function() { //When trigger is clicked...  
+            //Following events are applied to the subnav itself (moving subnav up and down)  
+            $(this).parent().find("ul.subnav").slideDown('fast').show(); //Drop down the subnav on click  
+    
+            $(this).parent().hover(function() {  
+            }, function(){  
+                $(this).parent().find("ul.subnav").slideUp('slow'); //When the mouse hovers out of the subnav, move it back up  
+            });  
+      
+            //Following events are applied to the trigger (Hover events for the trigger)  
+            }).hover(function() {  
+                $(this).addClass("subhover"); //On hover over, add class "subhover"  
+            }, function(){  //On Hover Out  
+                $(this).removeClass("subhover"); //On hover out, remove class "subhover"  
+        });  
+    });  
+</script>
+</HEAD>
+<BODY>
+	<div class="cuerpo_pagina">
+		<script type="text/javascript" src="./barras_laterales.js"></script>	
+<!--		<div class="barra_derecha"></div>	
+		<div class="barra_izquierda"></div>-->
+		<div class="pagina"> 
+			<div class="barra_titulares"></div>			
+			<div class="caja_vacia"></div>	
+			<script type="text/javascript" src="./menu.js"></script>
+			<br><br>
+			<div class="caja_contenedor">
+				<img src="./imagenes_web/cristo_titular.jpg" align="center">
+				<img src="./imagenes_web/virgen_titular.jpg" align="center">
+				<div class="txt_just">					
+					<div class="caja_txt500">	
+						<p>La Talla de Nuestro Padre Jesús Cautivo y Rescatado es obra del imaginero isleño
+						Juan Luis Castro Bey, realizada en el año 2001, es de cuerpo completo para vestir, tallada
+						en madera de cedro. Fué la primera obra de envergadura que acometió. Desde su bendición
+						y puesta al culto en junio de 2002 en la Parroquia de San Benito Abad, como ahora en su nueva sede canónica
+						,la Parroquia de María Auxiliadora, Jesus de Medinaceli caló muy hondo en el corazón de los
+						fieles y devotos de nuestra localidad. Son muchas las personas que todos los viernes se acercan por la Parroquia 
+						y se detienen ante el camarín de Jesús para rezar y besarle el pie.</p>
+						<p align="center">Vestidor Juan Manuel Díaz.<br></p>
+					</div>
+					<div class="rgtcaja_txt500">
+						<p>María Santísima de la Trinidad es obra del imaginero isleño 			
+						Jose Luis Castro Bey, obra realizada en el año 2008 es una imagen de candelero para vestir,
+						el cuerpo y partes vistas está realizado en madera de Cedro y el candelero en madera de Zapeli. Como en el caso del Cristo
+						es la primera dolorosa que realiza Juan Luis, fue bendecida el día 12 de Septiembre de 2008,
+						festividad del Dulce Nombre de María, siendo testigos las Hermandades Sacramentales de Jesús de Medinaceli 
+						de Cádiz y San Fernando. Con esta imagen Castro Bey de nuevo tal como hiciera con Jesús de 
+						Medinaceli vuelve a demostrar la sobriedad y dulzura que tienen sus obras pasionistas.<br>
+						<p align="center">Vestidor Juan Manuel Díaz.<br></p>
+					</div>				
+				</div>
+			</div>	
+		<div class="fondo_pagina"></div>
+		</div>		
+	</div>
+</BODY>
+</HTML>

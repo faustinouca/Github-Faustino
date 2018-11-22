@@ -1,0 +1,70 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0//EN">
+<HTML lang="es">
+<HEAD>
+<meta http-equiv="content-type" content="text/html; utf-8" />
+<meta charset="UTF-8"/>
+<TITLE>Junta de Gobierno</TITLE>
+<link rel="stylesheet" type="text/css" href="./estilo.css" media="screen" />
+<link type="image/x-icon" href="favicon.ico" rel="icon" />
+<script type="text/javascript" src="http://code.jquery.com/jquery-latest.js"></script>	
+<script type="text/javascript"> 
+	    $(document).ready(function(){  
+	       $("ul.subnav").parent().append("<span></span>"); //Only shows drop down trigger when js is enabled (Adds empty span tag after ul.subnav*)  
+	       $("ul.topnav li span").click(function() { //When trigger is clicked...  
+            //Following events are applied to the subnav itself (moving subnav up and down)  
+            $(this).parent().find("ul.subnav").slideDown('fast').show(); //Drop down the subnav on click  
+    
+            $(this).parent().hover(function() {  
+            }, function(){  
+                $(this).parent().find("ul.subnav").slideUp('slow'); //When the mouse hovers out of the subnav, move it back up  
+            });  
+      
+            //Following events are applied to the trigger (Hover events for the trigger)  
+            }).hover(function() {  
+                $(this).addClass("subhover"); //On hover over, add class "subhover"  
+            }, function(){  //On Hover Out  
+                $(this).removeClass("subhover"); //On hover out, remove class "subhover"  
+        });  
+    });  
+</script>
+</HEAD>
+<BODY>
+	<div class="cuerpo_pagina">
+		<script type="text/javascript" src="./barras_laterales.js"></script>	
+<!--		<div class="barra_derecha"></div>	
+		<div class="barra_izquierda"></div>-->
+		<div class="pagina"> 
+			<div class="barra_jg"></div>		
+			<div class="caja_vacia"></div>
+			<script type="text/javascript" src="./menu.js"></script>
+			<br />
+			<br />
+			<div class="caja_foto_jg" align="center">
+				<img src="./imagenes_web/junta_gob1.jpg" /> 
+			</div>
+			<div class="caja_foto_jg" align="center">
+				<img src="./imagenes_web/junta_gob2.jpg" align="center" />
+			</div>
+			<div class="txt_cent">
+				<br />Director Espiritual: Rvdo. P. Luis Sánchez Francisco M.Id.<br /><br />
+				Hermano Mayor: D. Jesús Saúco Guerra<br />
+				Vice-Hermana Mayor: Dª. María de los Ángeles Paz Sanz<br />
+				Fiscal: D. Juan Francisco Ferreira Caro<br />
+				Secretario: D. Faustino Martín Rey<br />
+				Mayordomo: Dª Verónica Paz Delgado<br />
+				Tesorero: D. José Luis García Paradela<br />
+				Vocal de Formación: D. Manuel Cejudo Llamas<br />
+				Vocal de Caridad: Dª Manuela de los Milagros Gutierrez López<br />
+				Vocal de Juventud: D. José Luis Paloma Pérez<br />				
+				Vocal: Dª María Jesús Berenguer Silva<br />
+				Vocal: Dª Rosa García Olmo<br />
+				Vocal: Dª María Teresa Pérez Fernández<br />				
+				Vocal: D. José Manuel Talavera Benitez<br />
+				Vocal: D. Rafael Jesús Suárez Collantes<br />							
+				Vocal: Dª Marta Sánchez Sánchez<br /><br />
+			</div>	
+		<div class="fondo_pagina"></div>
+		</div>
+	</div>
+</BODY>
+</HTML>
