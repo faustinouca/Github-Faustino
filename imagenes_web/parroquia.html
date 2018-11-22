@@ -1,0 +1,76 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0//EN">
+<HTML>
+<HEAD>
+<TITLE>Nuestra Parroquia</TITLE>
+<link rel="stylesheet" type="text/css" href="./estilo.css" media="screen" />
+<link type="image/x-icon" href="favicon.ico" rel="icon" />
+<script type="text/javascript" src="http://code.jquery.com/jquery-latest.js"></script>	
+<script type="text/javascript"> 
+	    $(document).ready(function(){  
+	       $("ul.subnav").parent().append("<span></span>"); //Only shows drop down trigger when js is enabled (Adds empty span tag after ul.subnav*)  
+	       $("ul.topnav li span").click(function() { //When trigger is clicked...  
+            //Following events are applied to the subnav itself (moving subnav up and down)  
+            $(this).parent().find("ul.subnav").slideDown('fast').show(); //Drop down the subnav on click  
+    
+            $(this).parent().hover(function() {  
+            }, function(){  
+                $(this).parent().find("ul.subnav").slideUp('slow'); //When the mouse hovers out of the subnav, move it back up  
+            });  
+      
+            //Following events are applied to the trigger (Hover events for the trigger)  
+            }).hover(function() {  
+                $(this).addClass("subhover"); //On hover over, add class "subhover"  
+            }, function(){  //On Hover Out  
+                $(this).removeClass("subhover"); //On hover out, remove class "subhover"  
+        });  
+    });  
+</script>
+</HEAD>
+<BODY>
+	<div class="pagina"> 
+		<div class="barra_parroquia"></div>	
+		<div class="caja_vacia"></div> <!-- Dejamos una caja_920 x 35 vacía para montar el efecto de situar por encima del texto siguiente la caja del menu -->
+		<div class="caja_900">
+			<div class="txt_cent">A continuaci&oacute;n te ofrecemos nuestra hoja parroquial,
+					 reflexiones y lecturas para la eucarist&iacute;a del Domingo 4 de Marzo. Pulsa sobre la imagen para acceder al 
+					 documento completo.
+			</div>
+		</div><br><br>
+		<center>
+			<a href="./imagenes_web/parroquia/HL192.pdf"><img src="./imagenes_web/parroquia/HL192.jpg"></a><br><br>	
+		</center>	
+	
+		<div class="caja_900_ancha">
+			<div class="txt_cent">El Complejo Parroquial M&ordf; Auxiliadora comprende el conjunto de la Parroquia y el edificio parroquial que 
+											sirve de sede, lugar de encuentro de varias agrupaciones cristianas y centro educacional donde comprometidos
+											 catequistas difunden la palabra de Dios. Si no sabes donde encontrarmos haz play sobre el video. 
+											 Si se te pide un plugin para verlo te recomiendo instalar Quicktime bajo Windows y con Linux cualquier plugin mpeg. 
+			</div>
+		</div><br><br>				
+		<center>
+		<object id="MediaPlayer" width="720" height="420">
+		<param name="fileName" value="./imagenes_web/parroquia/parroquia.mpg">
+		<param name="AutoStart" value="True"></param>
+		<param name="AutoSize" value="False" ></param>
+		<param name="ShowControls" value="True"></param>
+		<param name="ShowStatusBar" value="True"></param>
+		<param name="ShowDisplay" value="True"></param>
+		<param name="AutoRewind" value="True"></param>
+		<param name="Volume" value="-450"></param> 				
+		<embed type="application/x-mplayer2"
+				src="./imagenes_web/parroquia/parroquia.mpg"
+				pluginspage="http://www.microsoft.com/Windows/Downloads/Contents/MediaPlayer/"
+				autosize="False" width="720" height="420" 
+				filename="./imagenes_web/parroquia/parroquia.mpg" autostart="False" 
+				showcontrols="True" showstatusbar="True" 
+				showdisplay="True" autorewind="True">
+				</embed>	
+		</object>		
+		</center>
+	
+		<script type="text/javascript" src="./menu.js"></script>			
+		<div class="fondo_pagina"></div>			
+	</div>
+</BODY>
+<html>
+</html>

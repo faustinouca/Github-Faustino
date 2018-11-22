@@ -1,0 +1,103 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html lang="en">
+	<head>
+<!--   	<meta charset="utf-8"> -->
+      <title>Galeria de Fotografias</title>
+		<script src="http://code.jquery.com/jquery-1.11.2.min.js"></script>
+		<script src="./jquery.slideme2.js"></script>
+		<link href="./slideme2.css" rel="stylesheet"/>
+      // Lo siguiente son ajustes de la barra de menús
+     	<link rel="stylesheet" type="text/css" href="../estilo.css" media="screen" />
+     	<link type="image/x-icon" href="favicon.ico" rel="icon" />
+
+		//Arranco el menú y el slider de fotos al acabar de cargar la página
+		<script type="text/javascript"> 
+			// Lanzamiento y ajustes de slideme2		 
+	   	$(document).ready(function(){
+        		$('#foo').slideme({
+				arrows: true,
+				autoslide: true, // Auto slideshow mode
+				autoslideHoverStop: true, // Pause auto slideshow mode on mouseover.
+				css3: true, // Css3 animations.
+				interval: 3000, // The interval between each slide.
+				itemsForSlide: 1, // wrap each 'n' item.
+				labels: { //  Label for next/prev control;
+					next: 'Siguiente',
+					prev: 'Previa'
+					},
+				loop: true, // Infinite slideshow
+/*				onCreatedCallback: '', // Call a function after an istance has been created
+				onEndCallback: '', // Call a function after an istance animation;
+				onStartCallback: '', // Call a function before an istance animation*/
+				speed: 4500, // <a href="http://www.jqueryscript.net/animation/">Animation</a> speed in millisecond;
+				transition: 'fade', // Set the animation kind. fade, slide or page				
+				pagination: 'numbers', // Pagination settings. both, numbers or thumb
+				thumbs: { // Set the thumbnails size
+					width: 60,
+					height: 40
+				},
+				resizable: {
+						width: 750,
+						height: 500
+				}
+				});
+			//Lanzamiento y Ajustes de la barra de menús
+			 	$(document).ready(function(){  
+	       	$("ul.subnav").parent().append("<span></span>"); //Only shows drop down trigger when js is enabled (Adds empty span tag after ul.subnav*)  
+	       	$("ul.topnav li span").click(function() { //When trigger is clicked...  
+            //Following events are applied to the subnav itself (moving subnav up and down)  
+            $(this).parent().find("ul.subnav").slideDown('fast').show(); //Drop down the subnav on click  
+    
+            $(this).parent().hover(function() {  
+            }, function(){  
+                $(this).parent().find("ul.subnav").slideUp('slow'); //When the mouse hovers out of the subnav, move it back up  
+            });  
+      
+            //Following events are applied to the trigger (Hover events for the trigger)  
+            }).hover(function() {  
+                $(this).addClass("subhover"); //On hover over, add class "subhover"  
+            }, function(){  //On Hover Out  
+                $(this).removeClass("subhover"); //On hover out, remove class "subhover"  
+        		});  
+    		});  
+			});    		
+		</script> 	        
+	</head>
+	<body>
+		<div class="paginasmll">
+			<div class="barra_fotos"></div>
+			<div class="caja_vacia"></div>	
+			<div class="caja_900">
+				<div class="txt_cent">Fotograf&iacute;as realizadas durante el Triduo de Febrero de 2013 a Mayor Gloria de Jes&uacute;s de Medinaceli.
+				 Nuestro agradecimiento al fot&oacute;grafo D. Severiano Saucedo.
+				</div>
+			</div>	
+    		<div class="caja_foto">
+        		<h1>Triduo Cuaresma 2013</h1>
+        
+        		<div id="foo">
+        			<ul class="slideme">  
+            		<li><img alt="Triduo J.M Febrero 2013 - 1" src="../imagenes_web/Triduofeb2012/DSC_2347.png"></li>
+            		<li><img alt="Triduo J.M Febrero 2013 - 2" src="../imagenes_web/Triduofeb2012/DSC_2351.png"></li>
+            		<li><img alt="Triduo J.M Febrero 2013 - 3" src="../imagenes_web/Triduofeb2012/DSC_2354.png"></li>
+            		<li><img alt="Triduo J.M Febrero 2013 - 4" src="../imagenes_web/Triduofeb2012/DSC_2357.png"></li>
+            		<li><img alt="Triduo J.M Febrero 2013 - 5" src="../imagenes_web/Triduofeb2012/DSC_2359.png"></li>            	
+	            	<li><img alt="Triduo J.M Febrero 2013 - 6" src="../imagenes_web/Triduofeb2012/DSC_2363.png"></li>
+   	         	<li><img alt="Triduo J.M Febrero 2013 - 7" src="../magenes_web/Triduofeb2012/DSC_2364.png"></li>            	
+      	      	<li><img alt="Triduo J.M Febrero 2013 - 8" src="../imagenes_web/Triduofeb2012/DSC_2366.png"></li>
+         	   	<li><img alt="Triduo J.M Febrero 2013 - 9" src="../imagenes_web/Triduofeb2012/DSC_2381.png"></li>            	
+            		<li><img alt="Triduo J.M Febrero 2013 - 10" src="../imagenes_web/Triduofeb2012/DSC_2387.png"></li>
+            		<li><img alt="Triduo J.M Febrero 2013 - 11" src="../imagenes_web/Triduofeb2012/DSC_2389.png"></li>            	
+            		<li><img alt="Triduo J.M Febrero 2013 - 12" src="../imagenes_web/Triduofeb2012/DSC_2407.png"></li>
+            		<li><img alt="Triduo J.M Febrero 2013 - 13" src="../imagenes_web/Triduofeb2012/DSC_2419.png"></li>            	
+            		<li><img alt="Triduo J.M Febrero 2013 - 14" src="../imagenes_web/Triduofeb2012/DSC_2420.png"></li>
+	            	<li><img alt="Triduo J.M Febrero 2013 - 15" src="../imagenes_web/Triduofeb2012/DSC_2421.png"></li>            	
+   	         	<li><img alt="Triduo J.M Febrero 2013 - 16" src="../imagenes_web/Triduofeb2012/DSC_2422.png"></li>
+            	</ul>
+        		</div>
+     		</div>
+			<script type="text/javascript" src="../menu2.js"></script>     		       		    			
+		<div class="fondo_paginasmll"></div>	        	
+		</div>   
+    </body>
+</html>

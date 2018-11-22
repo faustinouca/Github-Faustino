@@ -1,0 +1,154 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html lang="en">
+	<head>
+   	<meta charset="utf-8">
+<!--      <title>Swipe-able Slider with Swipe.js - Hongkiat.com</title>-->
+	   <meta name="viewport" content="width=device-width, initial-scale=1 minimum-scale=1, maximum-scale=1">
+
+	   <link rel="stylesheet" href="./dist/css/swiper.min.css"> 
+	   <link rel="stylesheet" href="./dist/css/swiper_ej23.css"> 
+     	<link rel="stylesheet" type="text/css" href="../estilo.css" media="screen" />
+      
+		<script type="text/javascript" src="http://code.jquery.com/jquery-latest.js"></script>
+	
+     	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+
+
+     	
+     	<link type="image/x-icon" href="favicon.ico" rel="icon" />
+     	
+		<script type="text/javascript"> 
+	   	$(document).ready(function(){
+				//Lanzamiento y Ajustes de la barra de menús	    
+      		$("ul.subnav").parent().append("<span></span>");  
+		      $("ul.topnav li span").click(function() {  
+      		$(this).parent().find("ul.subnav").slideDown('fast').show();  
+         	$(this).parent().hover(function() {  
+            }, function(){  
+                $(this).parent().find("ul.subnav").slideUp('slow');  
+            });  
+            }).hover(function() {  
+                $(this).addClass("subhover");  
+            }, function(){  
+                $(this).removeClass("subhover");  
+        		});
+    		});
+		</script>     		
+   </head>
+	<body>
+		<div class="paginasmll">
+			<div class="barra_fotos"></div>
+			<div class="caja_vacia"></div>	
+			<div class="caja_900">
+				<div class="txt_cent"><br> Fotograf&iacute;as de la toma de posesión de la Junta de Gobierno, Junio 2013.
+				</div>
+			</div>
+			<br>
+ 			<div class="swiper-container gallery-top">
+					<div class="swiper-wrapper">
+            		<div class="swiper-slide" style="background-image:url(../imagenes_web/tomaposesion/DSC_6203.jpg")></div>
+            		<div class="swiper-slide" style="background-image:url(../imagenes_web/tomaposesion/DSC_6205.jpg")></div>
+            		<div class="swiper-slide" style="background-image:url(../imagenes_web/tomaposesion/DSC_6206.jpg")></div>
+            		<div class="swiper-slide" style="background-image:url(../imagenes_web/tomaposesion/DSC_6209.jpg")></div>
+            		<div class="swiper-slide" style="background-image:url(../imagenes_web/tomaposesion/jg1.jpg")></div>
+            		<div class="swiper-slide" style="background-image:url(../imagenes_web/tomaposesion/jg2.jpg")></div>
+            		<div class="swiper-slide" style="background-image:url(../imagenes_web/tomaposesion/jg3.jpg")></div>
+            		<div class="swiper-slide" style="background-image:url(../imagenes_web/tomaposesion/jg4.jpg")></div>
+            		<div class="swiper-slide" style="background-image:url(../imagenes_web/tomaposesion/jg5.jpg")></div>
+            		<div class="swiper-slide" style="background-image:url(../imagenes_web/tomaposesion/jg6.jpg")></div>
+            		<div class="swiper-slide" style="background-image:url(../imagenes_web/tomaposesion/jg7.jpg")></div>
+            		<div class="swiper-slide" style="background-image:url(../imagenes_web/tomaposesion/jg8.jpg")></div>
+            		<div class="swiper-slide" style="background-image:url(../imagenes_web/tomaposesion/jg9.jpg")></div>
+            		<div class="swiper-slide" style="background-image:url(../imagenes_web/tomaposesion/jg10.jpg")></div>
+            		<div class="swiper-slide" style="background-image:url(../imagenes_web/tomaposesion/jg11.jpg")></div>
+            		<div class="swiper-slide" style="background-image:url(../imagenes_web/tomaposesion/jg12.jpg")></div>
+            		<div class="swiper-slide" style="background-image:url(../imagenes_web/tomaposesion/jg13.jpg")></div>
+            		<div class="swiper-slide" style="background-image:url(../imagenes_web/tomaposesion/jg14.jpg")></div>
+            		<div class="swiper-slide" style="background-image:url(../imagenes_web/tomaposesion/jg15.jpg")></div>
+            		<div class="swiper-slide" style="background-image:url(../imagenes_web/tomaposesion/jg16.jpg")></div>
+            		<div class="swiper-slide" style="background-image:url(../imagenes_web/tomaposesion/1jesus.jpg")></div>
+            		<div class="swiper-slide" style="background-image:url(../imagenes_web/tomaposesion/2jose.jpg")></div>
+            		<div class="swiper-slide" style="background-image:url(../imagenes_web/tomaposesion/3javi.jpg")></div>
+            		<div class="swiper-slide" style="background-image:url(../imagenes_web/tomaposesion/4faus.jpg")></div>
+            		<div class="swiper-slide" style="background-image:url(../imagenes_web/tomaposesion/5josel.jpg")></div>
+            		<div class="swiper-slide" style="background-image:url(../imagenes_web/tomaposesion/6vero.jpg")></div>
+            		<div class="swiper-slide" style="background-image:url(../imagenes_web/tomaposesion/7tere.jpg")></div>
+            		<div class="swiper-slide" style="background-image:url(../imagenes_web/tomaposesion/8ceju.jpg")></div>
+            		<div class="swiper-slide" style="background-image:url(../imagenes_web/tomaposesion/9mano.jpg")></div>
+            		<div class="swiper-slide" style="background-image:url(../imagenes_web/tomaposesion/10joan.jpg")></div>
+            		<div class="swiper-slide" style="background-image:url(../imagenes_web/tomaposesion/11cristi.jpg")></div>
+            		<div class="swiper-slide" style="background-image:url(../imagenes_web/tomaposesion/12mari.jpg")></div>
+            		<div class="swiper-slide" style="background-image:url(../imagenes_web/tomaposesion/13sebas.jpg")></div>
+            		<div class="swiper-slide" style="background-image:url(../imagenes_web/tomaposesion/14paco.jpg")></div>
+            	</div>
+			      <div class="swiper-button-next swiper-button-blue"></div>
+        			<div class="swiper-button-prev swiper-button-blue"></div>					
+			</div>
+			<div class="swiper-container gallery-thumbs">
+					<div class="swiper-wrapper">
+            		<div class="swiper-slide" style="background-image:url(../imagenes_web/tomaposesion/DSC_6203.jpg")></div>
+            		<div class="swiper-slide" style="background-image:url(../imagenes_web/tomaposesion/DSC_6205.jpg")></div>
+            		<div class="swiper-slide" style="background-image:url(../imagenes_web/tomaposesion/DSC_6206.jpg")></div>
+            		<div class="swiper-slide" style="background-image:url(../imagenes_web/tomaposesion/DSC_6209.jpg")></div>
+            		<div class="swiper-slide" style="background-image:url(../imagenes_web/tomaposesion/jg1.jpg")></div>
+            		<div class="swiper-slide" style="background-image:url(../imagenes_web/tomaposesion/jg2.jpg")></div>
+            		<div class="swiper-slide" style="background-image:url(../imagenes_web/tomaposesion/jg3.jpg")></div>
+            		<div class="swiper-slide" style="background-image:url(../imagenes_web/tomaposesion/jg4.jpg")></div>
+            		<div class="swiper-slide" style="background-image:url(../imagenes_web/tomaposesion/jg5.jpg")></div>
+            		<div class="swiper-slide" style="background-image:url(../imagenes_web/tomaposesion/jg6.jpg")></div>
+            		<div class="swiper-slide" style="background-image:url(../imagenes_web/tomaposesion/jg7.jpg")></div>
+            		<div class="swiper-slide" style="background-image:url(../imagenes_web/tomaposesion/jg8.jpg")></div>
+            		<div class="swiper-slide" style="background-image:url(../imagenes_web/tomaposesion/jg9.jpg")></div>
+            		<div class="swiper-slide" style="background-image:url(../imagenes_web/tomaposesion/jg10.jpg")></div>
+            		<div class="swiper-slide" style="background-image:url(../imagenes_web/tomaposesion/jg11.jpg")></div>
+            		<div class="swiper-slide" style="background-image:url(../imagenes_web/tomaposesion/jg12.jpg")></div>
+            		<div class="swiper-slide" style="background-image:url(../imagenes_web/tomaposesion/jg13.jpg")></div>
+            		<div class="swiper-slide" style="background-image:url(../imagenes_web/tomaposesion/jg14.jpg")></div>
+            		<div class="swiper-slide" style="background-image:url(../imagenes_web/tomaposesion/jg15.jpg")></div>
+            		<div class="swiper-slide" style="background-image:url(../imagenes_web/tomaposesion/jg16.jpg")></div>
+            		<div class="swiper-slide" style="background-image:url(../imagenes_web/tomaposesion/1jesus.jpg")></div>
+            		<div class="swiper-slide" style="background-image:url(../imagenes_web/tomaposesion/2jose.jpg")></div>
+            		<div class="swiper-slide" style="background-image:url(../imagenes_web/tomaposesion/3javi.jpg")></div>
+            		<div class="swiper-slide" style="background-image:url(../imagenes_web/tomaposesion/4faus.jpg")></div>
+            		<div class="swiper-slide" style="background-image:url(../imagenes_web/tomaposesion/5josel.jpg")></div>
+            		<div class="swiper-slide" style="background-image:url(../imagenes_web/tomaposesion/6vero.jpg")></div>
+            		<div class="swiper-slide" style="background-image:url(../imagenes_web/tomaposesion/7tere.jpg")></div>
+            		<div class="swiper-slide" style="background-image:url(../imagenes_web/tomaposesion/8ceju.jpg")></div>
+            		<div class="swiper-slide" style="background-image:url(../imagenes_web/tomaposesion/9mano.jpg")></div>
+            		<div class="swiper-slide" style="background-image:url(../imagenes_web/tomaposesion/10joan.jpg")></div>
+            		<div class="swiper-slide" style="background-image:url(../imagenes_web/tomaposesion/11cristi.jpg")></div>
+            		<div class="swiper-slide" style="background-image:url(../imagenes_web/tomaposesion/12mari.jpg")></div>
+            		<div class="swiper-slide" style="background-image:url(../imagenes_web/tomaposesion/13sebas.jpg")></div>
+            		<div class="swiper-slide" style="background-image:url(../imagenes_web/tomaposesion/14paco.jpg")></div>
+					</div>			
+			</div>
+    		<script src="./dist/js/swiper.min.js"></script> 
+    		<script>
+    		var galleryTop = new Swiper('.gallery-top', {
+        		nextButton: '.swiper-button-next',
+        		prevButton: '.swiper-button-prev',
+        		spaceBetween: 10,
+<!--				auto: 3000,-->
+				loop: false,
+        		autoplay: 5500,
+		      autoplayDisableOnInteraction: true,
+		      speed: 900,
+    		
+    		});
+    		
+    		var galleryThumbs = new Swiper('.gallery-thumbs', {
+        		spaceBetween: 10,
+        		centeredSlides: true,
+        		slidesPerView: "auto",
+        		touchRatio: 0.2,
+        		slideToClickedSlide: true,
+    		});
+    		galleryTop.params.control = galleryThumbs;
+    		galleryThumbs.params.control = galleryTop;        			   	
+			</script> 
+			      <script type="text/javascript" src="../menu.js"></script>     	
+          	  		       		    			
+			<div class="fondo_paginasmll"></div>	        	
+		</div>
+    </body>
+</html>

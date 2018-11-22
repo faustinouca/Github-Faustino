@@ -1,0 +1,47 @@
+
+    .swiper-container {
+        width: 400px;
+        height: 100%;    	
+
+        margin-left: auto;
+        margin-right: auto;
+    }    
+    .swiper-slide {
+        background-size: cover;
+        background-position: center;
+       
+    }
+    .gallery-top {
+        height: 50%;
+        width: 40%;
+    }
+    .gallery-thumbs {
+        height: 12%;
+        box-sizing: border-box;
+        padding: 10px 0;
+    }
+    .gallery-thumbs .swiper-slide {
+        width: 20%;
+        height: 90%;
+        opacity: 0.6;
+    }
+    .gallery-thumbs .swiper-slide-active {
+        opacity: 1;
+    }
+    .swipe {
+    	overflow: hidden;
+    	position: relative;
+    	max-width: 500px;
+    	width: 100%;
+    	height: 450px;
+    	margin: 100px auto 0;
+	}
+	.swipe-wrap {
+   	overflow: hidden;
+    	position: relative;
+	}
+	.swipe-wrap > div {
+   	float: left;
+    	width: 100%;
+ 	   position: relative;
+	}

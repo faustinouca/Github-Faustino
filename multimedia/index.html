@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="en"><head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+
+<title>Swipe-able Slider with Swipe.js - Hongkiat.com</title>
+
+<script src="js/jquery.js"></script>
+<script src="js/swipe.js"></script>
+
+<link rel="stylesheet" href="css/normalize.css">
+<link rel="stylesheet" href="css/style.css">
+
+<script>
+$(document).ready(function() {
+	Slider = $('#slider').Swipe({
+		auto: 3000,
+		continuous: true
+	}).data('Swipe');
+
+	$('.next').on('click', Slider.next);
+	$('.prev').on('click', Slider.prev);
+});
+</script>
+
+</head>
+
+<body>
+
+<div class="demo-wrapper">
+	<div id="slider" class="swipe">
+		<div class="swipe-wrap">
+			<div>
+				<img src="img/cellumination.jpg" width="600" height="350">
+			</div>
+			<div>
+				<img src="img/color-zone.jpg" width="600" height="350">
+			</div>
+			<div>
+				<img src="img/diagonal-path.jpg" width="600" height="350">
+			</div>
+			<div>
+				<img src="img/fractal-reflection.jpg" width="600" height="350">
+			</div>
+			<div>
+				<img src="img/origami.jpg" width="600" height="350">
+			</div>
+		</div>
+		<span class="nav prev">Prev</span>
+		<span class="nav next">Next</span>
+	</div>
+</div>
+
+</body>
+</html>

@@ -1,0 +1,77 @@
+BODY  {
+	font-family : verdana,arial,helvetica;
+	font-size : 8pt;
+	background-color : #ffffff;
+}
+
+
+INPUT  {
+	font-family : verdana,arial,helvetica;
+	font-size : 8pt;
+}
+
+TEXTAREA  {
+	font-family : verdana,arial,helvetica;
+	font-size : 8pt;
+}
+
+SELECT  {
+	font-family : verdana,arial,helvetica;
+	font-size : 8pt;
+}
+
+.tablacalendario{
+	width: 160px;
+}
+.tablacalendario TD {
+	font-family : verdana,arial,helvetica;
+	font-size : 7pt;
+}
+.boton{
+	font-size:6pt;
+}
+.diasemana  {
+	font-family : verdana,arial,helvetica;
+	font-size : 8pt;
+	color: #ffffff;
+	background-color: #8C45EF;
+	text-align: center;
+}
+.tit, .titmesano  {
+	font-family : verdana,arial,helvetica;
+	font-size : 8pt;
+	color: #ffffff;
+	background-color: #8C45EF;
+	font-weight: bold;
+}
+.titmesano{
+	text-align: center;
+}
+.messiguiente, .mesanterior{
+	font-size:8pt;
+	font-weight:bold;
+	color:red;
+}
+.mesanterior{
+	text-align: right;
+}
+.messiguiente a, .mesanterior a{
+	color:white;
+	text-decoration:none;
+}
+.diavalido{
+	text-align: center;
+	background-color: #F0BEF4;	
+}
+.diainvalido{}
+.diaevento{
+	text-align: center;
+	background-color: #FCFA9F;	
+}
+.campoform{
+	text-align: center;
+	font-size:8pt;	
+}
+.display_abajo{
+	font-size:6pt;
+}
